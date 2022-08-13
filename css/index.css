@@ -1,6 +1,7 @@
 .header{
   height: var(--header-height);
-  background: url('/img/background2.jpg') top center / cover repeat;
+  background: url('/img/background.jpg') top center / cover repeat;
+  position: relative;
 }
 
 .header__logo{
@@ -112,7 +113,7 @@
 .header__detail-list{
   list-style-type: none;
   display: flex;
-  margin: 0 8px;
+  margin: 0 167px;
   padding-left: 0;
 }
 
@@ -125,12 +126,12 @@
 }
 
 .header__detail-item-icon{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-right: 4px;
 }
 
 .header__detail-item-text{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -155,4 +156,97 @@
 .header__detail-item-text--bold{
   font-weight: 800;
   transform: translateY(-1px);
+}
+
+/* header__main */
+.header__main{
+  position: absolute;
+  display: flex;
+  color: var(--white-color);
+  flex-direction: column;
+  text-align: center;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.header__title{
+  margin: 0 0 34px;
+  font-size: 6rem;
+  font-weight: 1000;
+  letter-spacing: 3px;
+  line-height: 6rem;
+  width: 1200px;
+  text-shadow: 0 0 1px black;
+}
+
+.header__title-sub::before{
+  content: "";
+  display: block;
+  position: absolute;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 56% 50%, 0% 0%);
+  background: var(--banners-color);
+  left: -25px;
+  width: 25px;
+  height: 100%;
+}
+
+.header__title-sub::after{
+  content: "";
+  display: block;
+  position: absolute;
+  clip-path: polygon(100% 0, 45% 50% , 100% 100%, 0 100%, 0% 50% , 0 0);
+  background: var(--banners-color);
+  right: -25px;
+  width: 25px;
+  height: 100%;
+}
+
+.header__title-des{
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-shadow: 0 0 20px black;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.header__title-btn{
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 2.2rem;
+  margin: 0 auto;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* form__options */
+.form__options{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 129px;
+  padding:38px 29px 34px;
+}
+
+.option__select{
+  background-color: #f3f3f3;
+  display: block;
+  min-width: 256px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__options-center{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.option__select-type{
+  font-size: 1.4rem;
+}
+/* footer */
+.footer{
+  height: 500px;
 }

@@ -1,5 +1,5 @@
 :root{
-    --primary-color:rgb(238, 77, 45);
+    --banners-color:#ff5400;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -9,11 +9,69 @@
 
 *{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.header__title-sub{
+    background-color: var(--banners-color);
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    position: relative;
+    margin-bottom: 34px;
+}
+
+.header__title-sub-circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    width: 8px;
+    height: 8px;
+}
+
+.header__title-sub-circle:first-child{
+    left: 0;
+}
+
+.header__title-sub-circle:last-child{
+    right: 0;
+}
+
+.btn{
+    max-width: 130px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 24px;
+    cursor: pointer;
+    background-color: var(--banners-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+  
