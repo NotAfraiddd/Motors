@@ -38,6 +38,8 @@ ul{
     letter-spacing: 4px;
     position: relative;
     margin-bottom: 34px;
+    animation: fadeInUp linear 1s;
+    
 }
 
 .header__title-sub-circle{
@@ -70,4 +72,18 @@ ul{
     justify-content: center;
     align-items: center;
 }
+
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
   
