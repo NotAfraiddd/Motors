@@ -1,6 +1,6 @@
 .header{
   height: var(--header-height);
-  background: url('/img/background.jpg') top center / cover repeat;
+  background: url('./img/background.jpg') top center / cover repeat;
   position: relative;
 }
 
