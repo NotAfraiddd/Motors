@@ -72,6 +72,21 @@ ul{
     justify-content: center;
     align-items: center;
 }
+/* 
+.btn{
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: var(--banners-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 
 /* Animation */

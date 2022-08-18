@@ -180,7 +180,7 @@
 .header__detail-item--distance{
   margin-left: 0;
   margin-right: 2px;
-
+  cursor: pointer !important;
 }
 
 .header__detail-item:hover{
@@ -211,7 +211,7 @@
 }
 
 .header__cart-list{
-  display: none;
+  display: block;
   position: absolute;
   width: 410px;
   top: 30px;
@@ -317,6 +317,10 @@
   font-size: 2.6rem;
 }
 
+.header__cart-icon:hover{
+  color: #FF9800 ;
+}
+
 .price-old{
   text-decoration: line-through;
 }
@@ -396,15 +400,18 @@
 
 }
 
-.header__title-btn{
+.btn.header__title-btn{
   text-decoration: none;
   color: var(--white-color);
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   margin: 0 auto;
   font-weight: 700;
   letter-spacing: 1px;
   animation: fadeInUp linear 1s;
-
+  border-radius: 5px;
+  max-width: 130px;
+  height: 40px;
+  padding: 24px;
 }
 
 /* form__options */
