@@ -142,8 +142,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header__detail-item header__detail-item-text header__detail-item-text--bold header__detail-item--separate">Register</li>
-                    <li class="header__detail-item header__detail-item-text header__detail-item-text--bold ">Login</li>
+                    <li class="header__detail-item js-register header__detail-item-text header__detail-item-text--bold header__detail-item--separate">Register</li>
+                    <li class="header__detail-item js-login header__detail-item-text header__detail-item-text--bold ">Login</li>
                 </ul>
             </div>
             <div class="grid wide">
@@ -256,7 +256,7 @@
         </footer>
     </div>
 
-    <div class="modal">
+    <div class="modal js-modal">
         <div class="modal__overlay">
         </div>
         <div class="modal__body">
@@ -320,18 +320,20 @@
                         <div class="authen-form__group">
                             <input type="password" required="" placeholder="Please enter your password" class="authen-form__input">
                         </div>
+                        <div class="authen-form__group">
+                            <input type="password" required="" placeholder="Confirm your password" class="authen-form__input">
+                        </div>
                     </div>
     
                     <div class="authen-form__aside">
-                        <div class="authen-form__help">
-                            <a href="" class="authen-form__help-link authen-form__help-forget">Forgot password</a>
-                            <span class="authen-form__separate"></span>
-                            <a href="" class="authen-form__help-link">Need help?</a>
-                        </div>
+                        <p class="authen-form__policy-text">Bằng việc đăng kí, bạn đã đồng ý với SpeedUp về 
+                            <a href="" class="authen-form__text-link">Điều khoản dịch vụ</a> & 
+                            <a href="" class="authen-form__text-link">Chính sách bảo mật</a>
+                        </p>
                     </div>
 
                     <div class="authen-form__control">
-                        <button type="submit" class="btn btn--sign-in">SIGN IN</button>
+                        <button type="submit" class="btn btn--sign-in">SIGN UP</button>
                     </div>
                 </div>
 
@@ -350,6 +352,6 @@
         </div>
     </div>
 </div>
-<script src="./js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

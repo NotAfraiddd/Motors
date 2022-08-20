@@ -302,6 +302,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  margin: 0;
 }
 
 .header__cart-show{
@@ -312,6 +313,7 @@
 .header__cart-list-items{
   max-height: 56vh;
   overflow-y: auto;
+  padding-left: 0;
 }
 
 .header__cart-infor-price{
@@ -325,6 +327,8 @@
   color: #8c7970;
   width: calc(100% + 24px);
 }
+
+
 
 .header__cart-infor-top{
   display: flex;
@@ -348,9 +352,19 @@
 .price-new{
   display: flex;
   justify-content: space-between;
+  color: var(--banners-color);
+}
+
+.header__cart-infor-quantity{
+  font-weight: 600;
+}
+
+.header__cart-item-price {
+  font-weight: 600;
 }
 
 .header__cart-item-category{
+  margin: 0;
   color: var(--text-color);
 }
 
@@ -467,6 +481,10 @@
   right: 0;
   bottom: 0;
   left: 0;
+  display: none;
+}
+
+.modal.open{
   display: flex;
 }
 
@@ -562,7 +580,7 @@
 .authen-form__control{
   display: flex;
   justify-content: flex-end;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 20px;
 }
 
@@ -599,4 +617,16 @@
 
 .authen-form__socials-icon{
   font-size: 1.8rem;
+}
+
+.authen-form__policy-text{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.authen-form__text-link{
+  text-decoration: none;
+  color: var(--banners-color);
 }
